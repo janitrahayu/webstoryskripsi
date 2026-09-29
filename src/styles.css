@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
+  --font-sans: "Source Sans 3", "Source Sans Pro", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --color-paper: #f4f0e6;
+  --color-paper-deep: #e8e1d1;
+  --color-ink: #1a1c16;
+  --color-muted: #5c6358;
+  --color-paddy: #1f4d3a;
+  --color-paddy-soft: #2e6a50;
+  --color-paddy-mist: #d7e4d6;
+  --color-line: #c9c2b2;
+  --color-surface: #fbf8f1;
+  --color-danger: #8a3b2d;
+
+  --color-background: var(--color-paper);
+  --color-foreground: var(--color-ink);
+  --color-card: var(--color-surface);
+  --color-primary: var(--color-paddy);
+  --color-primary-foreground: var(--color-paper);
+  --color-muted-foreground: var(--color-muted);
+  --color-border: var(--color-line);
+  --color-ring: var(--color-paddy);
+  --color-accent: var(--color-paddy-mist);
+  --color-accent-foreground: var(--color-paddy);
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --shadow-border:
+    0px 0px 0px 1px rgba(26, 28, 22, 0.08),
+    0px 1px 2px -1px rgba(26, 28, 22, 0.06),
+    0px 8px 24px -12px rgba(26, 28, 22, 0.12);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.55;
+    text-wrap: pretty;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    color: var(--color-ink);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-paddy);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: var(--color-paddy-mist);
+    color: var(--color-paddy);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
