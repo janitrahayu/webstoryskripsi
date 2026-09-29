@@ -42,7 +42,7 @@ function Kesimpulan() {
         lead="Kesimpulan riset ini dilihat pada dua temuan utama: akurasi pemetaan sawah dinamis berbasis penginderaan jauh dan validitas regresi berbasis grid yang teruji secara konsisten setelah diagregasi terhadap data resmi BPS."
       />
       <div className="mx-auto max-w-3xl space-y-12 px-4 py-12 md:px-6">
-        <Section title="Yang ditekankan">
+        <Section title="Kesimpulan">
           <div className="space-y-4">
             <Card className="p-6">
               <p className="text-xs font-medium uppercase tracking-[0.16em] text-paddy">Kesimpulan 1</p>
@@ -73,7 +73,7 @@ function Kesimpulan() {
           </Callout>
         </Section>
 
-        <Section kicker="5.2" title="Enam saran">
+        <Section kicker="5.2" title="Saran">
           <ol className="space-y-3">
             {SARAN.map((s, i) => (
               <li key={s.t} className="rounded-lg bg-surface px-5 py-4 shadow-[var(--shadow-border)]">
