@@ -260,13 +260,13 @@ function Hasil() {
             />
             <Callout>
               Insight kunci. S1+S2 tanpa iklim: 1.582.391 ton vs BPS 1.583.262 ton (selisih 871 ton,
-              0,1%). Iklim saja underestimasi tajam (869.597 ton). Semua fitur justru ambruk
+              0,1%). Iklim saja underestimasi. Semua fitur justru ambruk
               (539.991 ton). Di skala mikro, interpolasi iklim 5–9 km ke grid 1 km menambah noise
               musiman, bukan sinyal spasial. Radar + optik sudah cukup untuk volume kabupaten.
             </Callout>
           </Section>
 
-          <Section id="produksi" kicker="Tabel 8" title="Peta Estimasi Produksi Kecamatan 2025">
+          <Section id="produksi" title="Peta Estimasi Produksi Kecamatan 2025">
             <p>
               Angka di peta ini adalah agregasi grid skenario S1+S2—kombinasi yang paling dekat ke
               BPS. Kroya 129.069 ton memimpin, diikuti Anjatan, Gabuswetan, dan Terisi. Pesisir
@@ -298,7 +298,7 @@ function Hasil() {
             </p>
           </Section>
 
-          <Section id="dinamika" kicker="Eksplorasi Spasial" title="Dinamika Spasiotemporal 2022–2025">
+          <Section id="dinamika" kicker="Eksplorasi Spasial" title="Perubahan Produksi Padi 2022–2025">
             <p>
               Simulasi interaktif di bawah ini memperlihatkan perubahan produksi padi antar kecamatan dari tahun ke tahun. Tahun 2022 digunakan sebagai baseline, sedangkan peta untuk tahun berikutnya menunjukkan fluktuasi produksi secara <em>year-on-year</em> (YoY).
             </p>

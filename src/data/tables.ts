@@ -189,7 +189,7 @@ export const AREA_ABLATION: AblationRow[] = [
 export const SCENARIO_TOTALS = [
   { name: "Sentinel-1", ton: 1685100, note: "Overestimasi" },
   { name: "Sentinel-2", ton: 1644756, note: "Overestimasi" },
-  { name: "Iklim saja", ton: 869597, note: "Underestimasi tajam" },
+  { name: "Iklim saja", ton: 869597, note: "Underestimasi" },
   { name: "S1 + S2", ton: 1582391, note: "Paling presisi", best: true },
   { name: "Semua fitur", ton: 539991, note: "Tidak stabil" },
   { name: "Data BPS 2025", ton: 1583262, note: "Acuan resmi", official: true },

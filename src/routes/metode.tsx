@@ -99,7 +99,7 @@ function Metode() {
                         {/* KELOMPOK 2: KLASIFIKASI (4 Gambar) */}
                         <div>
                           <h5 className="font-semibold text-sm text-paddy mb-4 uppercase tracking-wider">
-                            2. Model Klasifikasi (Piksel 10 m)
+                            1. Model Klasifikasi (Piksel 10 m)
                           </h5>
                           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                             <ArchitectureCard 
@@ -127,7 +127,7 @@ function Metode() {
                         {/* KELOMPOK 1: REGRESI (4 Gambar) */}
                         <div>
                           <h5 className="font-semibold text-sm text-paddy mb-4 uppercase tracking-wider">
-                            1. Model Regresi (Grid 1 km)
+                            2. Model Regresi (Grid 1 km)
                           </h5>
                           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                             <ArchitectureCard 
