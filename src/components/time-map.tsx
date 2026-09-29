@@ -115,7 +115,7 @@ export function TimeMap() {
       <div className="flex flex-col gap-4 border-b border-line px-5 py-4 sm:flex-row sm:items-end sm:justify-between">
         <div className="flex-1">
           <p className="text-xs font-medium uppercase tracking-[0.16em] text-muted">
-            {isChangeMap ? "Peta Perubahan Produksi (YoY)" : "Peta Tematik"}
+            {isChangeMap ? "Peta Perubahan Produksi (YoY)" : "Peta Perubahan Produksi"}
           </p>
           <div className="mt-1 flex items-center gap-3">
              <h3 className="font-display text-xl font-semibold">
