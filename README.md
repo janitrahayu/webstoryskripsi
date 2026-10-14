@@ -40,6 +40,5 @@ Sistem dibangun menggunakan ekosistem Node.js. Ikuti langkah berikut untuk menja
 4. Setelah instalasi selesai, jalankan _server_ atau aplikasi dengan perintah:
    ```bash
    npm run dev
-   # (atau sesuaikan dengan script start di package.json, misal: npm start)
    ```
 5. Akses sistem melalui _browser_ pada `http://localhost:[PORT_YANG_SESUAI]`.
