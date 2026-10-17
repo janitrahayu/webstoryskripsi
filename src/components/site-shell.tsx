@@ -96,7 +96,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 );
               })}
               <a
-                href="https://drive.google.com/uc?export=download&id=1lfkOYDUg3ZTbGriVpdd89jFXKndsDQQN"
+                href="https://drive.google.com/uc?export=download&id=18XnnUtxUVuKflIyiBAxZHrfYVAd_vt7g"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-paper underline-offset-4 hover:underline"
