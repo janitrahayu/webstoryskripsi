@@ -55,7 +55,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Button asChild size="sm" className="hidden sm:inline-flex">
+            {/* <Button asChild size="sm" className="hidden sm:inline-flex">
               <a
                 href="https://drive.google.com/uc?export=download&id=1lfkOYDUg3ZTbGriVpdd89jFXKndsDQQN"
                 target="_blank"
@@ -64,7 +64,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 <Download />
                 Unduh Buku Skripsi
               </a>
-            </Button>
+            </Button> */}
             <button
               type="button"
               className="grid size-11 place-items-center rounded-md text-ink lg:hidden"

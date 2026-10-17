@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Download, LayoutGrid, FileBox, Calculator} from "lucide-react";
+import { ArrowRight, Download, LayoutGrid, FileBox, Calculator } from "lucide-react";
 import { ChoroplethMap } from "@/components/choropleth-map";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -11,7 +11,7 @@ import { TimeMap } from "@/components/time-map";
 export const Route = createFileRoute("/")({ component: Home });
 
 const STATS = [
-  { k: "Model Klasifikasi Terbaik", v: "F1 0,9514", d: (<><strong>Bi-LSTM Modifikasi</strong> · Akurasi = 0,9488 · Kappa = 0,8977</>)},
+  { k: "Model Klasifikasi Terbaik", v: "F1 0,9514", d: (<><strong>Bi-LSTM Modifikasi</strong> · Akurasi = 0,9488 · Kappa = 0,8977</>) },
   { k: "Model Regresi Produktivitas Terbaik", v: "R² 0,81", d: (<><strong>BiLSTM Modifikasi</strong> dengan <strong>input Sentinel-1, Sentinel-2, dan Data Iklim</strong> · RMSE 0,8053 ton/ha</>) },
   { k: "Validasi Model Regresi pada Data Tahun 2025", v: "Selisih 0,1%", d: (<>Pemodelan regresi dengan <strong>input Sentinel-1 dan Sentinel-2 = 1.582.391 ton</strong> vs <strong>Data Resmi Produksi BPS 1.583.262 ton</strong></>) },
   { k: "Kecamatan dengan Estimasi Produksi Padi Tertinggi 2025", v: "Kroya", d: (<><strong>129.069 ton</strong>, disusul dengan Kecamatan Anjatan 111.045 ton</>) },
@@ -39,9 +39,9 @@ function Home() {
               di Kabupaten Indramayu
             </h3>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
-              Tujuan utama penelitian ini mencakup klasifikasi tutupan lahan untuk memvalidasi 
-              luas lahan padi aktif secara dinamis serta disagregasi estimasi nilai produksi. 
-              Pendekatan ini berfungsi sebagai pemetaan variabilitas hasil produksi yang akurat dari tingkat 
+              Tujuan utama penelitian ini mencakup klasifikasi tutupan lahan untuk memvalidasi
+              luas lahan padi aktif secara dinamis serta disagregasi estimasi nilai produksi.
+              Pendekatan ini berfungsi sebagai pemetaan variabilitas hasil produksi yang akurat dari tingkat
               <em> grid</em> spasial mikro hingga agregasi tingkat kecamatan.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -67,25 +67,25 @@ function Home() {
               <li className="flex gap-3">
                 <LayoutGrid className="mt-0.5 size-5 shrink-0" />
                 <span className="text-sm leading-relaxed text-paper/90">
-                  Penelitian ini merancang kerangka kerja <em>Two Phase Modeling</em> yang memetakan lahan padi aktif 
-                  secara dinamis pada resolusi 10 meter sebelum melakukan <em>downscaling</em> estimasi regresi ke skala <em>grid</em> mikro 1 km x 1 km. 
+                  Penelitian ini merancang kerangka kerja <em>Two Phase Modeling</em> yang memetakan lahan padi aktif
+                  secara dinamis pada resolusi 10 meter sebelum melakukan <em>downscaling</em> estimasi regresi ke skala <em>grid</em> mikro 1 km x 1 km.
                 </span>
               </li>
               <li className="flex gap-3">
                 <FileBox className="mt-0.5 size-5 shrink-0" />
                 <span className="text-sm leading-relaxed text-paper/90">
-                  Modifikasi BiLSTM memperbaiki model acuan dari penelitian Filho et al. (2020) 
-                  beserta seluruh algoritma <em>machine learning</em> berbasis pohon. Arsitektur ini 
-                  memiliki performa paling optimal dengan <em>F1 Score</em> 0,9514 pada tahap klasifikasi 
+                  Modifikasi BiLSTM memperbaiki model acuan dari penelitian Filho et al. (2020)
+                  beserta seluruh algoritma <em>machine learning</em> berbasis pohon. Arsitektur ini
+                  memiliki performa paling optimal dengan <em>F1 Score</em> 0,9514 pada tahap klasifikasi
                   lahan serta <em>R-squared</em> 0,8146 pada tahap prediksi produksi.
                 </span>
               </li>
               <li className="flex gap-3">
                 <Calculator className="mt-0.5 size-5 shrink-0" />
                 <span className="text-sm leading-relaxed text-paper/90">
-                  Hasil agregasi estimasi produksi tingkat kabupaten dari 
-                  skenario kombinasi citra Sentinel 1 dan Sentinel 2 terbukti 
-                  akurat dengan nilai estimasi produkasi mencapai angka 1.582.391 ton 
+                  Hasil agregasi estimasi produksi tingkat kabupaten dari
+                  skenario kombinasi citra Sentinel 1 dan Sentinel 2 terbukti
+                  akurat dengan nilai estimasi produkasi mencapai angka 1.582.391 ton
                   yang mana hanya memiliki selisih sebesar 0,1 persen dari total produksi resmi BPS tahun 2025.
                 </span>
               </li>
@@ -179,7 +179,7 @@ function Home() {
                 </Card>
               </Link>
             ))}
-            <Card className="bg-paddy text-paper">
+            {/* <Card className="bg-paddy text-paper">
               <p className="text-xs uppercase tracking-wide text-paper/70">Dokumen</p>
               <h3 className="mt-2 font-display text-xl font-semibold text-white">Buku Skripsi</h3>
               <p className="mt-2 text-sm leading-relaxed text-paper/85">
@@ -194,7 +194,7 @@ function Home() {
                 <Download className="size-4" />
                 Buku Skripsi_Janitra Hayu
               </a>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>
